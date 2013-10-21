@@ -1,17 +1,21 @@
 var i18n = require('../');
-
-i18n.configInit( { locale: "ko_KR" } );
+var Sync = require('sync');
+i18n.configInit( { locale: "en_US" } ); // ko_KR
 i18n.mongoInit();
 
-i18n.add({
-	"Какой-то текст": "누군가가 텍스트",
-	"Только для тебя": "당신 만의"
-}, function(){
-	i18n.i18nGetLocale(function(){
-		console.log( i18n.__dict );
-	});
-});
+Sync(function(){
 
-//i18n.i18nGetLocale(function(){
-//	console.log( i18n.__dict );
-//});
+	i18n.add.sync(null, {
+		"Какой-то текст": "누군가가 텍스트",
+		"Только для тебя": "당신 만의"
+	}, 'ko_KR');
+
+	i18n.add.sync(null, {
+		"Какой-то текст": "Someone text",
+		"Только для тебя": "Only for you"
+	}, 'en_US');
+
+	i18n.i18nGetLocale.sync();
+
+	console.log( i18n.__("Какой-то текст") );
+});
