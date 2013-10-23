@@ -14,9 +14,9 @@
 		"node": ">= 0.4.0"
 	},
 	"dependencies": {
-		"mongoose": "3.6.20",
-		"sugar": "1.4.1",
-		"sync": "0.2.2",
-		"sprintf-js": "0.0.7"
+		"mongoose": ">=3.6.20",
+		"sugar": ">=1.4.1",
+		"sync": ">=0.2.2",
+		"sprintf-js": ">=0.0.7"
 	}
 }
