@@ -16,7 +16,7 @@
 	"dependencies": {
 		"mongoose": "3.6.20",
 		"sugar": "1.4.1",
-		"sync": "0.2.9",
+		"sync": "0.2.2",
 		"sprintf-js": "0.0.7"
 	}
 }
