@@ -1,5 +1,4 @@
-node-i18n
+node-i18n-mongo
 ---------
 
-Простая реализация модуля перевода для node\.js.
-Модуль работает в связи с MondoDB посредством mongoose.
+Module for i18n support in node.js projects with mongodb

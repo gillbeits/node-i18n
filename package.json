@@ -1,7 +1,7 @@
 {
   "name": "node-i18n-mongo",
   "version": "0.0.1",
-  "description": "node-i18n is a module for i18n support in nodejs projects with mongodb",
+  "description": "node-i18n-mongo is a module for i18n support in nodejs projects with mongodb",
   "main": "lib/i18n.js",
   "directories": {
     "test": "test"
