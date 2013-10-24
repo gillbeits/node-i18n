@@ -23,7 +23,7 @@ i18n.Fiber(function(){
     i18n.i18nGetLocale();
 
     console.log( i18n.__dict );
-    console.log( __('Welcome to my world, %s', ["Mike"]) );
+    console.log( __('Welcome to my World, %s', ["Mike"]) );
 });
 ```
 For use it in ExpressJs:

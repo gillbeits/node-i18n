@@ -2,17 +2,15 @@ var i18n = require('../')
 	, fmt = require('sprintf-js')
 	, Fiber = require('fibers');
 
-i18n.configInit( { locale: "en_US" } );
+i18n.configInit( { locale: "de_DE" } );
 
-Fiber(function(){
-
+i18n.Fiber(function(){
 	i18n.add({
-		"Добро пожаловать в %s": "Welcome to %s"
-	}, 'en_US');
+		"Welcome to my World, %s": "Willkommen in meiner Welt, %s"
+	}, 'de_DE');
 
 	i18n.i18nGetLocale();
 
 	console.log( i18n.__dict );
-	console.log( __('Добро пожаловать в %s', ["Express"]) );
-
+	console.log( __('Welcome to my World, %s', ["Mike"]) );
 }).run();
