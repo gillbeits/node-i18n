@@ -11,7 +11,7 @@ and then use it:
 ```js
 var i18n = require('node-i18n-mongo');
 
-i18n.configInit( { locale: "de_DE" } ); // <-- init config, mongo connect and global function apply
+i18n.configInit( { defaultLocale: "en_US", locale: "de_DE" } ); // <-- init config, mongo connect and global function apply
 ```
 Then you'me may use it in Fiber:
 ```js
@@ -23,14 +23,14 @@ i18n.Fiber(function(){
     i18n.i18nGetLocale();
 
     console.log( i18n.__dict );
-    console.log( __('Welcome to my World, %s', ["Mike"]) );
+    console.log( __("Welcome to my World, %s", ["Mike"]) );
 });
 ```
 For use it in ExpressJs:
 ```js
 var app = express();
 ...
-i18n.configInit( { locale: "de_DE", express: app } );
+i18n.configInit( { defaultLocale: "en_US", locale: "de_DE", express: app } );
 ```
 Then use it in ejs:
 ```ejs
