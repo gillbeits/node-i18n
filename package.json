@@ -1,36 +1,33 @@
 {
-  "name": "node-i18n-mongo",
-  "version": "0.0.1-1",
-  "description": "node-i18n-mongo is a module for i18n support in nodejs projects with mongodb",
-  "main": "lib/i18n.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "mongoose": "~3.6.20",
-    "sprintf-js": "~0.0.7",
-    "sugar": "~1.4.1",
-    "sync": "~0.2.2"
-  },
-  "devDependencies": {
-	  "fibers": "~1.0.1",
-	  "async": "~0.2.9"
-  },
-  "scripts": {
-    "test": "test/i18n.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gillbeits/node-i18n.git"
-  },
-  "keywords": [
-    "i18n",
-    "mongodb",
-    "mongoose",
-    "sync"
-  ],
-  "author": "Ivan Koretskiy (gillbeits@gmail.com)",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "gitHead": "94233cb7e8f6ec2db20bafa35d3a2a458735e3dd"
+	"name": "node-i18n-mongo",
+	"version": "0.0.2",
+	"description": "node-i18n-mongo is a module for i18n support in nodejs projects with mongodb",
+	"main": "lib/i18n.js",
+	"directories": {
+		"test": "test"
+	},
+	"dependencies": {
+		"mongoose": "~3.6.20",
+		"sprintf-js": "~0.0.7",
+		"sugar": "~1.4.1",
+		"fibers": "~1.0.1"
+	},
+	"devDependencies": {
+	},
+	"scripts": {
+		"test": "test/i18n.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gillbeits/node-i18n.git"
+	},
+	"keywords": [
+		"i18n",
+		"mongodb",
+		"mongoose",
+		"sync"
+	],
+	"author": "Ivan Koretskiy (gillbeits@gmail.com)",
+	"license": "BSD",
+	"readmeFilename": "README.md"
 }

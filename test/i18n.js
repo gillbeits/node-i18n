@@ -1,25 +1,18 @@
 var i18n = require('../')
-	, Sync = require('sync')
-	, fmt = require('sprintf-js');
+	, fmt = require('sprintf-js')
+	, Fiber = require('fibers');
 
 i18n.configInit( { locale: "en_US" } );
 
-Sync(function(){
+Fiber(function(){
 
-	i18n.add.sync(null, {
-		"Привет, %s": "Hello, %s"
+	i18n.add({
+		"Добро пожаловать в %s": "Welcome to %s"
 	}, 'en_US');
 
-	i18n.i18nGetLocale.sync();
-
-	console.log('### start print');
+	i18n.i18nGetLocale();
 
 	console.log( i18n.__dict );
+	console.log( __('Добро пожаловать в %s', ["Express"]) );
 
-	var user = "gillbeits";
-	console.log( fmt.vsprintf("Привет, %s", [user]) );
-	console.log( __("Привет, %s", [user]) );
-	console.log( __("Как поживаете, %s?", [user]) );
-
-	console.log('### end print');
-});
+}).run();
