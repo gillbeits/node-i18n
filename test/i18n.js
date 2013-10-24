@@ -3,7 +3,6 @@ var i18n = require('../')
 	, fmt = require('sprintf-js');
 
 i18n.configInit( { locale: "en_US" } );
-i18n.mongoInit();
 
 Sync(function(){
 
@@ -19,8 +18,8 @@ Sync(function(){
 
 	var user = "gillbeits";
 	console.log( fmt.vsprintf("Привет, %s", [user]) );
-	console.log( i18n.__("Привет, %s", [user]) );
-	console.log( i18n.__("Как поживаете, %s?", [user]) );
+	console.log( __("Привет, %s", [user]) );
+	console.log( __("Как поживаете, %s?", [user]) );
 
 	console.log('### end print');
 });
