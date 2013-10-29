@@ -20,8 +20,9 @@ i18n.Fiber(function(){
 	console.log( __("Welcome to my World, %s", "core", "ru_RU", ["Mike"]) );
 
 	console.log( i18n.__dict );
-}).run();
 
-i18n.i18nGetString("Welcome to my World, %s", function(err, doc){
-	console.log(doc);
-});
+	i18n.i18nGetString("Welcome to my World, %s", function(err, doc){
+		console.log(doc);
+	});
+
+}).run();
