@@ -41,3 +41,5 @@ or in jade:
 h2= title
   p= __("Welcome to my World, %s", [name])
 ```
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/ed36d1c3baed23c90d1b124eed915970 "githalytics.com")](http://githalytics.com/gillbeits/node-i18n)
