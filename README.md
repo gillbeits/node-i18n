@@ -41,3 +41,7 @@ or in jade:
 h2= title
   p= __("Welcome to my World, %s", [name])
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gillbeits/node-i18n/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
