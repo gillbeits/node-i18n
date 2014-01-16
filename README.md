@@ -5,6 +5,7 @@ Module for i18n support in node.js projects with mongodb
 
 [![Build Status](https://david-dm.org/gillbeits/node-i18n.png)](https://david-dm.org/gillbeits/node-i18n)
 [![NPM version](https://badge.fury.io/js/node-i18n-mongo.png)](http://badge.fury.io/js/node-i18n-mongo)
+[![Build Status](https://travis-ci.org/gillbeits/node-i18n.png?branch=master)](https://travis-ci.org/gillbeits/node-i18n)
 
 [![NPM](https://nodei.co/npm/node-i18n-mongo.png?downloads=true)](https://nodei.co/npm/node-i18n-mongo/?downloads=true)
 
