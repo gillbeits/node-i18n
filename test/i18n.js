@@ -23,6 +23,7 @@ i18n.Fiber(function(){
 
 	i18n.i18nGetString("Welcome to my World, %s", function(err, doc){
 		console.log(doc);
+		i18n.mongoose.connection.close();
 	});
 
 }).run();
