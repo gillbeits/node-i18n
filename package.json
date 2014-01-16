@@ -7,7 +7,7 @@
 		"test": "test"
 	},
 	"dependencies": {
-		"mongoose": "~3.6.20",
+		"mongoose": ">=3.6.20",
 		"sprintf-js": "~0.0.7",
 		"sugar": "~1.4.1",
 		"fibers": "~1.0.1"
